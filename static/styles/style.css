@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand&display=swap);
+
+body {
+    font-family: Quicksand, serif;
+    background: linear-gradient(135deg, rgb(75, 95, 160) 0%, rgb(165,180,213) 100%);
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(140, 140, 140);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: whitesmoke;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+}
+
+.sidebar > a {
+    text-decoration: none;
+}
+
+
+.slide-text {
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #8c8c8c;
+}
+
+.footer-text {
+    color: #f5f5f5;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-animation {
+    animation: call 4s ease 0s infinite normal forwards;
+}
+
+.btn-outline-primary {
+    background-color: #f5f5f5;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
